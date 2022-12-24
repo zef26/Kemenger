@@ -40,10 +40,7 @@ window.addEventListener("keydown", (event) => {
   if (event.key == 'Escape') {
     modal.classList.remove("active")
     mod_sl.classList.remove('mod-active')
-    //  brg_center.classList.remove('brg-not-active')
-    //  brg_top.classList.remove('rot')
-    //  brg_bot.classList.remove('rot2')
-    //  brg_block.classList.remove('brg-pos')
+   
   }
 }, true)
 
@@ -385,73 +382,6 @@ secr.onclick = () => {
   brg_block.classList.toggle('brg-pos')
   secr.classList.toggle('secr-ac')
 }
-
-
-// let drag_and_drop = () => {
-//     let zone1 = document.querySelectorAll('#zone');
-//     let ufo = document.querySelector('#ufo')
-//     let ufo1 = document.querySelector('#ufo1')  
-//     let ufo2 = document.querySelector('#ufo2')  
-//     let ufo3 = document.querySelector('#ufo3')     
-//     let drag_start = function () {
-//         setTimeout(() => {
-//             this.classList.add('hide')
-//         })
-//     };
-
-//     let drag_end = function () {
-//         this.classList.remove('hide')
-//     }
-
-//     let drag_over = function (evtent) {
-//         evtent.preventDefault();
-//     }
-
-//     let drag_enter = function (evtent) {
-//         evtent.preventDefault();
-//         this.classList.add('hovered');
-//     }
-
-//     let drag_leave = function () {
-//         this.classList.remove('hovered');
-//     }
-
-//     let drag_drop = function () {
-//         this.append(ufo)
-//         this.classList.remove('hovered');
-//     }
-//      drag_drop = function () {
-//       this.append(ufo1)
-//       this.classList.remove('hovered');
-//   }
-//    drag_drop = function () {
-//       this.append(ufo2)
-//       this.classList.remove('hovered');
-//   }
-//   drag_drop = function () {
-//     this.append(ufo3)
-//     this.classList.remove('hovered');
-// }
-
-//     for(let item of zone1) {
-//         item.addEventListener('dragover', drag_over);
-//         item.addEventListener('dragenter', drag_enter);
-//         item.addEventListener('dragleave', drag_leave);
-//         item.addEventListener('drop', drag_drop)
-//     }
-   
-
-//     ufo.addEventListener('dragstart', drag_start);
-//     ufo.addEventListener('dragend', drag_end);
-//     ufo1.addEventListener('dragstart', drag_start);
-//     ufo1.addEventListener('dragend', drag_end);
-//     ufo2.addEventListener('dragstart', drag_start);
-//     ufo2.addEventListener('dragend', drag_end);
-//     ufo3.addEventListener('dragstart', drag_start);
-//     ufo3.addEventListener('dragend', drag_end);
-    
-// };
-// drag_and_drop()
 
 let drag_and_drop = ()=>{
 let zone = document.querySelectorAll('.zone-1')
